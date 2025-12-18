@@ -1,0 +1,36 @@
+/* Main box styling */
+.container {
+  background: #6686bd;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+
+  /* Width limits */
+  max-width: 600px;  
+  min-width: 280px;   
+  border-radius: 10px;
+}
+
+/* Text becomes larger on bigger screens */
+@media (min-width: 768px) {
+  .container {
+    padding: 40px;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+}
+
+/* On very small screens */
+@media (max-width: 400px) {
+  .container {
+    background: #1a53bf; 
+    padding: 15px;
+  }
+
+  .container h1 {
+    font-size: 1.3rem;
+  }
+}
